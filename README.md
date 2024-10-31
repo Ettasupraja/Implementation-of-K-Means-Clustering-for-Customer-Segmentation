@@ -34,18 +34,21 @@ data=pd.read_csv("Mall_Customers.csv")
 data.head()
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/5a5445d9-8ac1-4a71-8d34-55ea7618d686)
 
 ```
 data.info()
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/737c1c09-f215-426a-8947-88b15fcdcc85)
 
 ```
 data.isnull().sum()
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/34865351-f35b-4bc3-b920-1abaa3b9728f)
 
 ```
@@ -62,6 +65,7 @@ plt.title("Elbow Method")
 ```
 
 Output:
+
 ![image](https://github.com/user-attachments/assets/85dcfd46-bc7f-40f7-89e2-3f03d3e8723a)
 
 ```
@@ -72,6 +76,7 @@ y_pred=km.predict(data.iloc[:,3:])
 y_pred
 ```
 Output:
+
 ![image](https://github.com/user-attachments/assets/d5026ffe-c7da-47fe-8af8-27fd617deb3b)
 
 ```
@@ -92,6 +97,7 @@ plt.scatter(df4["Annual Income (k$)"],df4["Spending Score (1-100)"], color = "re
 plt.show()
 ```
 ## Output:
+
 ![image](https://github.com/user-attachments/assets/5eca2f62-9ecf-4226-bbd3-0b621edfdb2f)
 
 
