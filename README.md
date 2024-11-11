@@ -26,12 +26,14 @@ RegisterNumber:  212223220022
 ```
 ```
  import pandas as pd 
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
+
 ```
 
 ```
 data=pd.read_csv("Mall_Customers.csv")
 data.head()
+
 ```
 Output:
 
@@ -39,6 +41,7 @@ Output:
 
 ```
 data.info()
+
 ```
 Output:
 
@@ -46,6 +49,7 @@ Output:
 
 ```
 data.isnull().sum()
+
 ```
 Output:
 
@@ -62,6 +66,7 @@ plt.plot(range(1,11),wcss)
 plt.xlabel("No.of Clusters")
 plt.ylabel("wcss")
 plt.title("Elbow Method")
+
 ```
 
 Output:
@@ -74,6 +79,7 @@ km.fit(data.iloc[:,3:])
 KMeans(n_clusters=5)
 y_pred=km.predict(data.iloc[:,3:])
 y_pred
+
 ```
 Output:
 
@@ -95,6 +101,7 @@ plt.scatter(df2["Annual Income (k$)"],df2["Spending Score (1-100)"], color = "gr
 plt.scatter(df3["Annual Income (k$)"],df3["Spending Score (1-100)"], color = "blue")
 plt.scatter(df4["Annual Income (k$)"],df4["Spending Score (1-100)"], color = "red")
 plt.show()
+
 ```
 ## Output:
 
